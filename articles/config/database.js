@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const config = require('./config');
-const dbName = 'exam-prep-2'; ////// change that
+const dbName = 'articles';
 
 module.exports = () => {
     return mongoose.connect(config.dbURL + dbName, { useNewUrlParser: true, useUnifiedTopology: true },

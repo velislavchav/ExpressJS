@@ -1,0 +1,13 @@
+<div class="spacer">
+    <h2>{{article.title}}
+        <div class="controls">
+            <a href="/edit/{{article._id}}">[edit]</a>
+            <a href="/delete/{{article._id}}">[delete]</a>
+        </div>
+    </h2>
+    <article>
+        <p>
+            {{article.content}}
+        </p>
+    </article>
+</div>

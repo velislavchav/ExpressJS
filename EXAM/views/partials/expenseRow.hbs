@@ -1,0 +1,26 @@
+<tr>
+    <td>
+        <img src="/images/date.png" />
+        <p>{{date}}</p>
+    </td>
+    <td>
+        <p>{{category}}</p>
+        {{#if report}}
+        <div class="report">
+            <a href="/report/{{_id}}">Report</a>
+        </div>
+        {{/if}}
+    </td>
+    <td>
+        <img src="/images/amount.png" alt="">
+        <p>лв <span>{{total}}</span></p>
+    </td>
+    <td>
+        <img src="/images/category.png" alt="">
+        <p>{{merchant}}</p>
+    </td>
+    <td>
+        <img src="/images/hastag.png" alt="">
+        <p>{{description}}</p>
+    </td>
+</tr>

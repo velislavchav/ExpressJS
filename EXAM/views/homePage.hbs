@@ -1,0 +1,27 @@
+{{#if user}}
+{{>addAmount}}
+<hr class="separator">
+{{#if expenses}}
+<table class="expenses">
+        <thead>
+                <tr>
+                        <th>Date</th>
+                        <th>Merchant</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                </tr>
+        </thead>
+        <tbody>
+                {{#each expenses}}
+                {{>expenseRow}}
+                {{/each}}
+        </tbody>
+</table>
+{{else}}
+<h1 class="no-expenses">No expenses founded so far.. <span>GOOD JOB!</span></h1>
+{{/if}}
+{{else}}
+<p class="guest-message">MoneyGone? The best expense tracker tool of all time!<br>Аre you new here? <a
+                href="/register">Register</a> yourself!</p>
+{{/if}}

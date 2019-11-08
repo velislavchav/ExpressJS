@@ -1,0 +1,26 @@
+<section class="expense-report">
+
+    <h1>ID: {{course._id}}</h1>
+    <div class="report-date">
+        <img src="/images/date.png" alt="">
+        <p>{{course.date}}</p>
+    </div>
+
+    <div class="report-category">
+        <img src="/images/amount.png" alt="">
+        <p>Equipment - лв {{course.total}}</p>
+    </div>
+
+    <div class="report-merchant">
+        <p>{{course.merchant}}</p>
+    </div>
+
+    <div class="report-description">
+        <img src="/images/hastag.png" alt="">
+        <p>{{course.description}}</p>
+    </div>
+
+    <div class="report-action">
+        <a disabled href="/delete/{{course._id}}">Stop tracking</a>
+    </div>
+</section>
